@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+       <link href="{{ url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <!-- Material Design Bootstrap -->
+    <link href="{{ url_for('static',filename='mdb.min.css') }}" rel="stylesheet" type="text/css">
+    <!-- Your custom styles (optional) -->
+    <link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet" type="text/css">
+</head>
+
+<body  background="{{ url_for('static',filename='POLICE.jpg') }}">
+
+    <!-- Start your project here-->
+    <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Links -->
+       
+        <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="/policepage/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a href="/events/"class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+                <a href="/records/"class="nav-link" href="#">Criminal records</a>
+            </li>
+<li class="nav-item">
+                <a href="/officers/"class="nav-link" href="#">Officers</a>
+       </li>
+       
+            <!-- Dropdown -->
+             <font color="deep-orange">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My cases</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">		
+                    <a href="/solved/"class="dropdown-item" href="#">Solved</a>
+                    <a href="/unsolved/"class="dropdown-item" href="#">Unsolved</a>
+                    
+                </div>
+            </li>
+
+</font>
+
+
+
+        </ul>
+      
+<a href="/messages/"><button class="btn btn-deep-orange">Messages <i <i class="fa fa-envelope-o" aria-hidden="true"></i></i></button></a>
+        <!-- Links -->
+<div class="dropdown">
+
+            <!--Trigger-->
+            <button class="btn btn-deep-orange dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</button>
+            
+
+            <!--Menu-->
+            <div class="dropdown-menu dropdown-primary">
+               <a class="dropdown-item" href="/profile/">My profile</a>
+                <a class="dropdown-item" href="/">Logout</a>
+         
+            </div>
+        </div>
+        <!-- Search form -->
+       
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<br/>
+<!--/.Navbar-->
+
+<h1 style="position:relative;left:1%;width:40px;"><span class="badge red">Search a Criminal</span></h1>
+
+<form class="form-inline" >
+
+    
+
+    <div class="md-form form-group" style="position:rellative;left:4%;width;40px;" >
+       
+        <input type="password" id="form92" class="form-control validate">
+        <label for="form92" data-error="wrong" data-success="right">Enter name</label>
+    </div>
+
+    <div class="md-form form-group" style="position:rellative;left:4%;width:180px;">
+        <a class="btn btn-deep-orange btn-lg" href="/criminaldetails/">Search</a>
+    </div>
+
+</form>
+
+</br>
+<div style="position:relative;left:1%;width:500px;">
+<h1 style="position:relative;left:4%;width:40px;"><span class="badge red">Search a Case</span></h1>
+
+<form class="form-inline" >
+
+    
+
+    <div class="md-form form-group" style="position:rellative;left:4%;" >
+       
+        <input type="password" id="form92" class="form-control validate">
+        <label for="form92" data-error="wrong" data-success="right">Enter name</label>
+    </div>
+
+    <div class="md-form form-group" style="position:rellative;left:4%;">
+        <a class="btn btn-deep-orange btn-lg">Search</a>
+    </div>
+
+
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+   <!-- JQuery -->
+       <script type="text/javascript" src="{{ url_for('static',filename='jquery-3.1.1.min.js') }}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{{ url_for('static',filename='popper.min.js') }}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{{ url_for('static',filename='bootstrap.min.js') }}"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{{ url_for('static',filename='mdb.min.js') }}"></script>
+</body>
+
+</html>

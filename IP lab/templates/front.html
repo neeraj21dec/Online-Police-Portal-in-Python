@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='font-awesome.min.css') }}" type="text/css">
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <!-- Material Design Bootstrap -->
+    <link href="{{ url_for('static',filename='mdb.min.css') }}" rel="stylesheet" type="text/css">
+    <!-- Your custom styles (optional) -->
+    <link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body background="{{ url_for('static',filename='POLICE.jpg') }}">
+
+    <!-- Start your project here-->
+ 
+    <div class="register" style="position:relative;left:90%;width:30px;">
+   <a href="/register"<button type="button" class="btn btn-deep-orange">Register</button></a>
+   </div>
+                
+<nav class="navbar navbar-expand-lg navbar-deep-orange">
+    <a class="navbar-brand" href="/">POLICE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/stations/">Stations<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/auctions/">Auctions</a>
+            </li>
+           
+           
+        </ul>
+    </div>
+</nav>
+
+<!--Panel-->
+<div class="police" style="width:300px;position:relative;left:40%;">
+<form method="post" action="/logincheck/">
+
+<div class="card">
+    <div class="card-header deep-orange lighten-1 white-text">
+        POLICE LOGIN:
+    </div>
+    <div class="card-body">
+        <div class="md-form" style="width:250px;">
+    <input type="text" id="form1" class="form-control" name="mobno">
+    <label for="form1" class="">Mobile no.</label>
+</div>
+           <div class="md-form" style="width:250px;">
+    <input type="password" id="form1" class="form-control" name="pwd">
+    <label for="form1" class="">password</label>
+</div>
+           
+    <button class="btn btn-deep-orange" type="submit">Login</button>
+    </div>
+</div>
+</form>
+</div>
+<!--/.Panel-->
+              
+
+
+<!--Footer-->
+<footer class="page-footer center-on-small-only mdb-color lighten-3">
+
+    <!--Footer Links-->
+    <div class="container">
+        <div class="row my-4">
+
+            <!--First column-->
+            <div class="col-md-4 col-lg-4">
+                <h5 class="title mb-4 font-bold">POLICE WEBSITE</h5>
+                <p>This website is for police ,send mails or any type of queriies regarding crimes,reports etc of the city.</p>
+
+            </div>
+            <!--/.First column-->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!--Second column-->
+            <div class="col-md-2 col-lg-2 ml-auto">
+                <h5 class="title mb-4 font-bold">About</h5>
+                <ul>
+                    
+                    <p><a href="#!">about us</a></p>
+                    <p><a href="#!">blog (Coming soon!)</a></p>
+                    
+                </ul>
+            </div>
+            <!--/.Second column-->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!--Third column-->
+            <div class="col-md-4 col-lg-3">
+                <h5 class="title mb-4 font-bold">Address</h5>
+                <!--Info-->
+                <p><i class="fa fa-home mr-3"></i>jawahr nagar,head office</p>
+                <p><i class="fa fa-envelope mr-3"></i> kotapolice@.com</p>
+                <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            <!--/.Third column-->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!--Fourth column-->
+        
+            <!--/.Fourth column-->
+
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            NEERAJ ARORA<a href="#"> </a>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+                
+            
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="{{ url_for('static',filename='jquery-3.1.1.min.js') }}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{{ url_for('static',filename='popper.min.js') }}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{{ url_for('static',filename='bootstrap.min.js') }}"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{{ url_for('static',filename='mdb.min.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.view {
+  
+}
+    
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+
+form input{position:relative;left:40%;width:70px;}
+          form a{position:relative;left:40%}      
+		  
+		  .cases{width:900px;margin-left:30px;}
+		  h1 {margin-left:30px;}
+		 form[class="news"]{width:400px;position:relative;left:70%;bottom:690px;}

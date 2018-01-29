@@ -1,0 +1,233 @@
+	<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+      <link href="{{ url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <!-- Material Design Bootstrap -->
+    <link href="{{ url_for('static',filename='mdb.min.css') }}" rel="stylesheet" type="text/css">
+    <!-- Your custom styles (optional) -->
+    <link href="{{ url_for('static',filename='stylepo.css') }}" rel="stylesheet" type="text/css">
+</head>
+
+<body  background="{{ url_for('static',filename='POLICE.jpg') }}">
+
+    <!-- Start your project here-->
+                  
+                
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Links -->
+       
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/policepage/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a href="/events/"class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+                <a href="/records/"class="nav-link" href="#">Criminal records</a>
+            </li>
+<li class="nav-item">
+                <a href="/officers/"class="nav-link" href="#">Officers</a>
+       </li>
+       
+            <!-- Dropdown -->
+             <font color="deep-orange">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My cases</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">		
+                    <a href="/solved/"class="dropdown-item" href="#">Solved</a>
+                    <a href="/unsolved/"class="dropdown-item" href="#">Unsolved</a>
+                    
+                </div>
+            </li>
+
+</font>
+
+
+
+        </ul>
+      
+<a href="/messages/"><button class="btn btn-deep-orange">Messages <i <i class="fa fa-envelope-o" aria-hidden="true"></i></i></button></a>
+        <!-- Links -->
+<div class="dropdown">
+
+            <!--Trigger-->
+            <button class="btn btn-deep-orange dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</button>
+            
+
+            <!--Menu-->
+            <div class="dropdown-menu dropdown-primary">
+                <a class="dropdown-item" href="/profile/">My profile</a>
+                <a class="dropdown-item" href="/">Logout</a>
+         
+            </div>
+        </div>
+        <!-- Search form -->
+       
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+   <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search a Case" aria-label="Search"/>
+            <a href="/casedetails/"><font color="deep-orange"><i class="fa fa-search" aria-hidden="true"></i></font></a>
+            
+        </form> 
+                                
+      <h1><span class="badge red">Current cases</span></h1>  
+           
+<!--Panel-->
+<div class="cases">
+<div class="card">
+    <div class="card-header deep-orange lighten-1 white-text">
+        Shantanu sharma murder case
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Latest updates</h4>
+        <p class="card-text">Got medical reports</p>
+        <a class="btn btn-deep-orange" href="/casedetails/">Go into case</a>
+        <img src="{{ url_for('static',filename='burggi.jpg') }}" height="242" width="242">
+    </div>
+</div><br/>
+
+                
+<!--Panel-->
+<div class="card">
+    <div class="card-header deep-orange lighten-1 white-text">
+        PNB bank robbery
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Latest updates</h4>
+        <p class="card-text">5 men arrested for enquiry</p>
+        <a class="btn btn-deep-orange">Go into case</a>
+    </div>
+</div>
+</div>
+<!--/.Panel-->
+<form class="news">
+ <h1><span class="badge red">Latest News</span></h1>
+ <div class="card card-body">
+    <h4 class="card-title">Arohi case solved</h4>
+    <p class="card-text">case solved by kota police</p>
+    <div class="flex-row">
+       
+    </div>
+</div><br/>
+ <div class="card card-body">
+    <h4 class="card-title">Ram rahim got jailed</h4>
+    <p class="card-text">sirsa police arrested ram rahim</p>
+    <div class="flex-row">
+      
+    </div>
+</div><br/>
+ 
+  <div class="card card-body">
+    <h4 class="card-title">Inspector got reward</h4>
+    <p class="card-text">Inspector shindey got nobal prize</p>
+    <div class="flex-row">
+     
+    </div>
+</div>
+<a href="/updatenews/"> <button type="button" class="btn btn-outline-deep-orange btn-rounded waves-effect">update a news</button></a>
+ 
+</form>
+<!--Footer-->
+<footer class="page-footer center-on-small-only mdb-color lighten-3">
+
+    <!--Footer Links-->
+    <div class="container">
+        <div class="row my-4">
+
+            <!--First column-->
+            <div class="col-md-4 col-lg-4">
+                <h5 class="title mb-4 font-bold">POLICE WEBSITE</h5>
+                <p>Here you can ask questions ,send mails or any type of queriies regarding police of your city.</p>
+
+            </div>
+            <!--/.First column-->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!--Second column-->
+            <div class="col-md-2 col-lg-2 ml-auto">
+                <h5 class="title mb-4 font-bold">About</h5>
+                <ul>
+                    
+                    <p><a href="#!">about us</a></p>
+                    <p><a href="#!">blog</a></p>
+                    <p><a href="#!">events</a></p>
+                </ul>
+            </div>
+            <!--/.Second column-->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!--Third column-->
+            <div class="col-md-4 col-lg-3">
+                <h5 class="title mb-4 font-bold">Adress</h5>
+                <!--Info-->
+                <p><i class="fa fa-home mr-3"></i>jawahr nagar,head office</p>
+                <p><a href="#"><i class="fa fa-envelope mr-3"></i> send a mail to head office</a></p>
+                <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            <!--/.Third column-->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!--Fourth column-->
+        
+            <!--/.Fourth column-->
+
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            NEERAJ ARORA<a href="#"> </a>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+                
+            
+
+    <!-- /Start your project here-->
+
+    <!-- JQuery -->
+       <script type="text/javascript" src="{{ url_for('static',filename='jquery-3.1.1.min.js') }}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{{ url_for('static',filename='popper.min.js') }}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{{ url_for('static',filename='bootstrap.min.js') }}"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{{ url_for('static',filename='mdb.min.js') }}"></script>
+</body>
+
+</html>
